@@ -37,7 +37,7 @@ app.post("/api/v1", (req, res) => {
 });
 
 // for server functionality!
-const port = 3020;
+const port = process.env.PORT | 3020;
 app.listen(port, () => {
   console.log("server is running", port);
 });
